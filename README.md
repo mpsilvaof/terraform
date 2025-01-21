@@ -2,5 +2,5 @@ Terraform é uma ferramenta de infraestrutura como código que permite criar, ge
 
 terraform init  = Inicializa o diretorio |
 terraform plan  = Analisa o script e mostra o que será (criado, modificado ou destruido) |
-terraform apply = aplica o que será (criado, modificado ou destruido) será solicitado confirmação "yes/no" |
+terraform apply = aplica o que será (criado, modificado ou destruido) será solicitado confirmação "yes/no"
 
