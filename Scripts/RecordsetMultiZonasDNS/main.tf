@@ -23,9 +23,9 @@ provider "azurerm" {
 #Recordset CNAME para cada zona dns
 resource "azurerm_dns_cname_record" "cname-record" {
   for_each            = toset(var.zones)  
-  name                = "value_host"            
+  name                = "value_host"   #preencha aqui nome host do recordset         
   zone_name           = each.value         
-  resource_group_name = "resource_group_name"      
+  resource_group_name = "resource_group_name"  #preenchi aqui o valor do seu resource group    
   ttl                 = 3600              
-  record              = "value_recordname"           
+  record              = "value_recordname"     #preenchi aqui o valor do recordset      
 }
